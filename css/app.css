@@ -911,11 +911,16 @@ body {
     color: #5c636c;
     transition: all 0.6s linear;
     border: 1px solid transparent;
-    background-color: #f1f1f1; }
-    .input-text--style-1:focus {
-      box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
       background-color: transparent;
-      border-color: #eee; }
+      border-color: #eee;
+  }
+    .input-text--style-1:focus {
+      box-shadow: 0 0 15px 0 rgba(255, 128, 25, 0.1);
+    background-color: #ff450061;
+      border-color: #eee;
+    
+    }
   .input-text--style-2 {
     color: #5c636c;
     border: 1px solid transparent;
@@ -6496,6 +6501,14 @@ color: #ffcf00;
   .fa-cogs, .fa-shopping-bag, .fa-home {
     font-size: 22px;
   }
+
+.searchAndMore{
+    /* background: red; */
+    width: 80%;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
 @media (max-width: 991px) {
 .pageUl{
  flex-direction: column;
