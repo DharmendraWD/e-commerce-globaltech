@@ -12,6 +12,7 @@
     <!--====== Google Font ======-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
 
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <!--====== Vendor Css ======-->
     <link rel="stylesheet" href="css/vendor.css">
 
@@ -26,7 +27,6 @@
 <body class="config">
     <div class="preloader is-active">
         <div class="preloader__wrap">
-
             <img class="preloader__img" src="images/preloader.png" alt=""></div>
     </div>
 
@@ -47,10 +47,10 @@
 
                         <a class="main-logo" href="index.html">
 
-                            <img src="" alt="LOGO HERE"></a>
+                            <img src="./images/logo/logo-1.png" alt="LOGO HERE"></a>
                         <!--====== End - Main Logo ======-->
 
-
+<div class="searchAndMore">
                         <!--====== Search Form ======-->
                         <form class="main-form">
 
@@ -60,8 +60,6 @@
 
                             <button class="btn btn--icon fas fa-search main-search-button" type="submit"></button></form>
                         <!--====== End - Search Form ======-->
-
-
                         <!--====== Dropdown Main plugin ======-->
                         <div class="menu-init" id="navigation">
 
@@ -70,13 +68,15 @@
                             <!--====== Menu ======-->
                             <div class="ah-lg-mode">
 
-                                <span class="ah-close">✕ Close</span>
+                                <span class="ah-close">Close
+                                    <i class="ri-collapse-diagonal-2-line"></i>
+                                </span>
 
                                 <!--====== List ======-->
                                 <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
                                     <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Account">
 
-                                        <a><i class="far fa-user-circle"></i></a>
+                                        <a ><i class="far fa-user-circle"></i></a>
 
                                         <!--====== Dropdown ======-->
 
@@ -114,6 +114,7 @@
                             <!--====== End - Menu ======-->
                         </div>
                         <!--====== End - Dropdown Main plugin ======-->
+                        </div>
                     </div>
                     <!--====== End - Primary Nav ======-->
                 </div>
@@ -132,18 +133,22 @@
                         <!--====== Dropdown Main plugin ======-->
                         <div class="menu-init" id="navigation2">
 
-                            <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-cog" type="button"></button>
-
+                            <button class="btn moreBtn btn--icon toggle-button toggle-button--secondary" type="button">
+                            MORE  <i class="ri-expand-diagonal-s-line"></i>
+                            </button>
+                    
                             <!--====== Menu ======-->
                             <div class="ah-lg-mode">
 
-                                <span class="ah-close">✕ Close</span>
+                                <span class="ah-close">Close
+                                    <i class="ri-collapse-diagonal-2-line"></i>
+                                </span>
 
                                 <!--====== List ======-->
                                 <ul class="ah-list ah-list--design2 ah-list--link-color-secondary">
                                     <li>
 
-                                        <a href="./index-3.html">NEW ARRIVALS</a></li>
+                                        <a href="./newarrival.html">NEW ARRIVALS</a></li>
                                     <li class="has-dropdown">
 
                                         <a href="./explore.html">EXPLORE</i></a>
@@ -175,7 +180,9 @@
                             <!--====== Menu ======-->
                             <div class="ah-lg-mode">
 
-                                <span class="ah-close">✕ Close</span>
+                                <span class="ah-close">Close
+                                    <i class="ri-collapse-diagonal-2-line"></i>
+                                </span>
 
                                 <!--====== List ======-->
                                 <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
@@ -1426,7 +1433,7 @@
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-6 u-s-m-b-30">
 
-                                <a class="promotion" href="shop-side-version-2.html">
+                                <a class="promotion" href="./explore.html">
                                     <div class="aspect aspect--bg-grey aspect--square">
 
                                         <img class="aspect__img promotion__img" src="images/promo/promo-img-1.jpg" alt=""></div>
@@ -1434,18 +1441,16 @@
                                         <div class="promotion__text-wrap">
                                             <div class="promotion__text-1">
 
-                                                <span class="u-c-secondary">ACCESSORIES FOR YOUR EVERYDAY</span></div>
+                                                <span class="u-c-secondary">EXPLORE OUR</span></div>
                                             <div class="promotion__text-2">
-
-                                                <span class="u-c-secondary">GET IN</span>
-
-                                                <span class="u-c-brand">TOUCH</span></div>
+                                                 <span class="u-c-brand">GENUINE</span></div>
+                                                <span class="u-c-secondary">PRODUCTS</span>
                                         </div>
                                     </div>
                                 </a></div>
                             <div class="col-lg-4 col-md-4 col-sm-6 u-s-m-b-30">
 
-                                <a class="promotion" href="shop-side-version-2.html">
+                                <a class="promotion" href="./newarrival.html">
                                     <div class="aspect aspect--bg-grey aspect--square">
 
                                         <img class="aspect__img promotion__img" src="images/promo/promo-img-2.jpg" alt=""></div>
@@ -1453,9 +1458,9 @@
                                         <div class="promotion__text-wrap">
                                             <div class="promotion__text-1">
 
-                                                <span class="u-c-secondary">SMARTPHONE</span>
+                                                <span class="u-c-secondary">PRODUCTS</span>
 
-                                                <span class="u-c-brand">2019</span></div>
+                                                <span class="u-c-brand">2024</span></div>
                                             <div class="promotion__text-2">
 
                                                 <span class="u-c-secondary">NEW ARRIVALS</span></div>
@@ -1464,7 +1469,7 @@
                                 </a></div>
                             <div class="col-lg-4 col-md-4 col-sm-6 u-s-m-b-30">
 
-                                <a class="promotion" href="shop-side-version-2.html">
+                                <a class="promotion" href="./whatsnew.html">
                                     <div class="aspect aspect--bg-grey aspect--square">
 
                                         <img class="aspect__img promotion__img" src="images/promo/promo-img-3.jpg" alt=""></div>
@@ -1472,7 +1477,7 @@
                                         <div class="promotion__text-wrap">
                                             <div class="promotion__text-1">
 
-                                                <span class="u-c-secondary">DSLR FOR NEW GENERATION</span></div>
+                                                <span class="u-c-secondary">WHAT"S NEW IN</span>          <span class="u-c-brand">IN THIS YEAR?</span></div></div>
                                             <div class="promotion__text-2">
 
                                                 <span class="u-c-brand">GET UP TO 10% OFF</span></div>
@@ -1799,10 +1804,10 @@
 
                                         <span class="testimonial__double-quote"><i class="fas fa-quote-right"></i></span>
                                         <blockquote class="testimonial__block-quote">
-                                            <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum enim consectetur, blanditiis soluta quae accusantium maiores aut ut facere porro in accusamus libero hic earum minus numquam necessitatibus officiis modi?</p>
                                         </blockquote>
 
-                                        <span class="testimonial__author">John D. / DVNTR Inc.</span>
+                                        <span class="testimonial__author">Name</span>
                                     </div>
                                 </div>
                                 <div class="testimonial">
@@ -1813,10 +1818,10 @@
 
                                         <span class="testimonial__double-quote"><i class="fas fa-quote-right"></i></span>
                                         <blockquote class="testimonial__block-quote">
-                                            <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum enim consectetur, blanditiis soluta quae accusantium maiores aut ut facere porro in accusamus libero hic earum minus numquam necessitatibus officiis modi?</p>
                                         </blockquote>
 
-                                        <span class="testimonial__author">John D. / DVNTR Inc.</span>
+                                        <span class="testimonial__author">Name</span>
                                     </div>
                                 </div>
                                 <div class="testimonial">
@@ -1827,10 +1832,10 @@
 
                                         <span class="testimonial__double-quote"><i class="fas fa-quote-right"></i></span>
                                         <blockquote class="testimonial__block-quote">
-                                            <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum enim consectetur, blanditiis soluta quae accusantium maiores aut ut facere porro in accusamus libero hic earum minus numquam necessitatibus officiis modi?</p>
                                         </blockquote>
 
-                                        <span class="testimonial__author">John D. / DVNTR Inc.</span>
+                                        <span class="testimonial__author">Name</span>
                                     </div>
                                 </div>
                                 <div class="testimonial">
@@ -1844,7 +1849,7 @@
                                             <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
                                         </blockquote>
 
-                                        <span class="testimonial__author">John D. / DVNTR Inc.</span>
+                                        <span class="testimonial__author">Name</span>
                                     </div>
                                 </div>
                             </div>
@@ -2003,37 +2008,6 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12">
-                            <div class="outer-footer__content">
-
-                                <span class="outer-footer__content-title">Join our Newsletter</span>
-                                <form class="newsletter">
-                                    <div class="u-s-m-b-15">
-                                        <div class="radio-box newsletter__radio">
-
-                                            <input type="radio" id="male" name="gender">
-                                            <div class="radio-box__state radio-box__state--primary">
-
-                                                <label class="radio-box__label" for="male">Male</label></div>
-                                        </div>
-                                        <div class="radio-box newsletter__radio">
-
-                                            <input type="radio" id="female" name="gender">
-                                            <div class="radio-box__state radio-box__state--primary">
-
-                                                <label class="radio-box__label" for="female">Female</label></div>
-                                        </div>
-                                    </div>
-                                    <div class="newsletter__group">
-
-                                        <label for="newsletter"></label>
-
-                                        <input class="input-text input-text--only-white" type="text" id="newsletter" placeholder="Enter your Email">
-
-                                        <button class="btn btn--e-brand newsletter__btn" type="submit">SUBSCRIBE</button></div>
-
-                                    <span class="newsletter__text">Subscribe to the mailing list to receive updates on promotions, new arrivals, discount and coupons.</span>
-                                </form>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -2310,7 +2284,7 @@
                 <div class="modal-content modal--shadow">
 
                     <button class="btn new-l__dismiss fas fa-times" type="button" data-dismiss="modal"></button>
-                    <div class="modal-body">
+                    <div class="modal-body popup" >
                         <div class="row u-s-m-x-0">
                             <div class="col-lg-6 new-l__col-1 u-s-p-x-0">
 
@@ -2320,18 +2294,18 @@
                             <div class="col-lg-6 new-l__col-2">
                                 <div class="new-l__section u-s-m-t-30">
                                     <div class="u-s-m-b-8 new-l--center">
-                                        <h3 class="new-l__h3">Newsletter</h3>
+                                        <h3 class="new-l__h3">Explore More Product</h3>
                                     </div>
                                     <div class="u-s-m-b-30 new-l--center">
-                                        <p class="new-l__p1">Sign up for emails to get the scoop on new arrivals, special sales and more.</p>
+                                        <p class="new-l__p1">Be Our Member by Signing In righ now. </p>
                                     </div>
                                     <form class="new-l__form">
                                         <div class="u-s-m-b-15">
-
-                                            <input class="news-l__input" type="text" placeholder="E-mail Address"></div>
                                         <div class="u-s-m-b-15">
-
-                                            <button class="btn btn--e-brand-b-2" type="submit">Sign up!</button></div>
+                                            <a href="signin.html">
+                                            <button class="btn btn--e-brand-b-2" type="button">Sign In!</button>
+                                        </a>
+                                    </div>
                                     </form>
                                     <div class="u-s-m-b-15 new-l--center">
                                         <p class="new-l__p2">By Signing up, you agree to receive Reshop offers,<br />promotions and other commercial messages. You may unsubscribe at any time.</p>
@@ -2350,7 +2324,12 @@
         <!--====== End - Modal Section ======-->
     </div>
     <!--====== End - Main App ======-->
-
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+<script>
+    (function () {
+        const locomotiveScroll = new LocomotiveScroll();
+    })();
+</script>
 
     <!--====== Vendor Js ======-->
     <script src="js/vendor.js"></script>

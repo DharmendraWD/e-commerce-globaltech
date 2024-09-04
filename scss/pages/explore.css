@@ -22,10 +22,9 @@ min-width: 190px;
     border: 1px solid #edeaea;
     border-radius: 4px;
     padding: 10px;
-    text-align: left;
+    text-align: center;
     width: 100%;
     cursor: pointer;
-    font-weight: bold;
     position: relative;
     outline: none;
 }
