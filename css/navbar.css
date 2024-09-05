@@ -40,7 +40,6 @@ body {
     padding: 2rem 9%;
     background: #fff;
       position: sticky;
-      
   top: 0;
   width: 100%;
   z-index: 1000; /* Adjust as needed to ensure it stays on top */
@@ -70,7 +69,6 @@ body {
     line-height: 4.5rem;
     border-radius: .5rem;
     background: #eee;
-    color: var(--black);
     font-size: 2rem;
     margin-left: .3rem;
     cursor: pointer;

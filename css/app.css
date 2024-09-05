@@ -5680,7 +5680,7 @@ backdrop-filter: blur(29px);
 
 .content-span-3 {
   display: block;
-  font-size: 0.875rem;
+    font-size: 1.875rem;
   margin-bottom: 8px; }
 
 .content-span-4 {
@@ -5694,8 +5694,8 @@ backdrop-filter: blur(29px);
     font-size: 1.375rem; }
 
 .shop-now-link {
-  padding: 18px 53px;
-  font-size: 0.75rem;
+    padding: 12px 35px;
+    font-size: 2rem;
   position: relative;
   transition: background 0.3s;
   text-align: center;
