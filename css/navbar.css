@@ -39,14 +39,36 @@ body {
     justify-content: space-between;
     padding: 2rem 9%;
     background: #fff;
-      position: sticky;
-  top: 0;
+    align-items: center;
+      position: fixed;
+      top: 0;
+      flex-direction: column;
   width: 100%;
   z-index: 1000; /* Adjust as needed to ensure it stays on top */
 }
 
+/* ----------------------------- */
+.searchBar{
+    width: 37vw !important;
+}
 
+.searchBar, .serchbtn {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  transition: 300ms ease-in-out;
+  border: none !important;
+}
 
+.searchBar:focus {
+  background-color: white;
+  box-shadow: 13px 13px 100px #ff9100,
+             -13px -13px 100px #ffffff;
+}
+/* --------------------- */
 .ecomNav-header .ecomNav-logo {
     font-size: 2.5rem;
     font-weight: bolder;
@@ -56,7 +78,7 @@ body {
     color: var(--orange);
 }
 .ecomNav-header .ecomNav-navbar a {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     margin: 0 1rem;
     color: var(--black);
 }
@@ -129,21 +151,27 @@ body {
     right: 2rem;
     transition: .4s linear;
 }
+.ecomNav-content{
+    line-height: 0 !important;
+}
 .ecomNav-header .ecomNav-shopping-cart .ecomNav-box {
     display: flex;
     position: relative;
     align-items: center;
     gap: 1rem;
-    margin: 1rem 0;
+    margin: 0 0;
+border-bottom: 1px solid;
+    max-height: 43px;
+    border-color: #ff4500;
 }
 .ecomNav-header .ecomNav-shopping-cart .ecomNav-box img {
     height: 10rem;
 }
 .ecomNav-header .ecomNav-shopping-cart .ecomNav-box .fa-trash {
-    font-size: 2rem;
+    font-size: 1.4rem;
     position: absolute;
-    top: 50%; right: 2rem;
-    color: var(--light-color);
+    top: 50%; right: 1.2rem;
+    color: #FF5722;
     transform: translateY(-50%);
 }
 .ecomNav-header .ecomNav-shopping-cart .ecomNav-box .fa-trash:hover {
@@ -151,18 +179,17 @@ body {
 }
 .ecomNav-header .ecomNav-shopping-cart .ecomNav-box .ecomNav-content h3 {
     color: var(--black);
-    font-size: 1.7rem;
-    padding-bottom: 1rem;
+    font-size: 1rem;
 }
 .ecomNav-header .ecomNav-shopping-cart .ecomNav-box .ecomNav-content span {
     color: var(--light-color);
-    font-size: 1.6rem;
+    font-size: .7rem;
 }
 .ecomNav-header .ecomNav-shopping-cart .ecomNav-box .ecomNav-content .ecomNav-quantity {
     padding-left: 1rem;
 }
 .ecomNav-header .ecomNav-shopping-cart .ecomNav-total {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     padding: 1rem 0;
     text-align: center;
     color: var(--black);
@@ -170,25 +197,30 @@ body {
 .ecomNav-header .ecomNav-shopping-cart .ecomNav-btn {
     display: block;
     text-align: center;
-    margin: 1rem;
 }
 .ecomNav-btn {
     margin-top: 1rem;
     display: inline-block;
-    padding: .8rem 3rem;
+    padding: 0.3rem 1rem;
     font-size: 1.7rem;
     border-radius: .5rem;
-    border: .2rem solid var(--black);
+    border: .2rem solid #FF5722;
     cursor: pointer;
     background: none;
+    width: 50%;
+    margin: 0 auto;
 }
 .ecomNav-btn:hover {
     background: var(--orange);
     color: #fff;
 }
+.ecomNav-login-form a{
+    margin: 6px 0;
+}
 .ecomNav-header .ecomNav-login-form {
     width: 35rem;
-    background-color: #fff;
+    backdrop-filter: blur(20px);
+    --webkit-backdrop-filter: blur(20px);
     box-shadow: var(--box-shadow);
     padding: 2rem;
     border-radius: .5rem;
@@ -200,9 +232,12 @@ body {
     right: 2rem;
     transition: .4s linear;
 }
+a button{
+    background-color: transparent;
+}
 .ecomNav-header .ecomNav-login-form h3 {
-    font-size: 2.5rem;
-    color: var(--black);
+    font-size: 1.5rem;
+    color: orangered;
     text-transform: uppercase;
 }
 .ecomNav-header .ecomNav-login-form .ecomNav-box {
@@ -224,7 +259,12 @@ body {
     color: var(--orange);
     text-decoration: underline;
 }
-
+.upperOptionsNav{
+        width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /* media queries */
 
 @media (max-width: 991px) {
@@ -278,4 +318,8 @@ body {
     .footer .box-container .box .payment-img {
         margin: 2rem auto;
     }
+}
+a {
+    text-decoration: none
+     !important;
 }

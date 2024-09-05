@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/navbar.css">
     <!--====== Utility-Spacing ======-->
     <link rel="stylesheet" href="css/utility.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!--====== App ======-->
     <link rel="stylesheet" href="css/app.css">
@@ -33,6 +34,7 @@
 
 <!-- Header section start -->
 <header class="ecomNav-header">
+    <div class="upperOptionsNav">
     <a href="/" class="ecomNav-logo"><img src="./images//logo/logo-1.png" style="width: 150px;" alt="" ></a>
     <nav class="ecomNav-navbar">
         <a href="/">HOME</a>  
@@ -43,15 +45,10 @@
 
     <div class="ecomNav-icons">
         <div class="fas fa-bars" id="ecomNav-menu-btn"></div>
-        <div class="fas fa-search" id="ecomNav-search-btn"></div>
+        <!-- <div class="fas fa-search" id="ecomNav-search-btn"></div> -->
         <div class="fas fa-shopping-cart" id="ecomNav-cart-btn"></div>
         <div class="fas fa-user" id="ecomNav-login-btn"></div>
     </div>
-
-    <form action="" class="ecomNav-search-form">
-        <input type="search" id="ecomNav-search-box" placeholder="search here...">
-        <label for="ecomNav-search-box" class="fas fa-search"></label>
-    </form>
 
     <div class="ecomNav-shopping-cart">
         <div class="ecomNav-box">
@@ -92,9 +89,18 @@
       <a href="./signin.html" class="ecomNav-btn"> <button>Login</button></a> 
       <a href="./signup.html" class="ecomNav-btn"> <button>I am New</button></a> 
     </form>
+       </div>   
+  <div class="">
+<div class="input-group">
+<div class="input-group serchParent">
+  <input type="search" class="form-control searchBar rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+  <button type="button" class="btn btn-outline-primary serchbtn" data-mdb-ripple-init>search</button>
+</div>
+</div>
+  </div>
+
 </header>
 <!-- Header section end -->
-
 
         <!--====== App Content ======-->
         <div class="app-content">
