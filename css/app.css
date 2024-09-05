@@ -596,7 +596,7 @@ body {
   color: #ff4500 !important; }
 
 .u-c-secondary {
-  color: #333333 !important; }
+  color: #ff4500  !important; }
 
 .u-c-white {
   color: #ffffff !important; }
@@ -2045,7 +2045,7 @@ backdrop-filter: blur(29px);
   background-color: #000000; }
   .outer-footer__content-title {
     display: block;
-    color: #ffffff;
+    color: #ff4500 ;
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 10px; }
@@ -2056,7 +2056,7 @@ backdrop-filter: blur(29px);
     .outer-footer__text-wrap > i {
       margin-right: 6px;
       font-size: 14px;
-      color: #ffffff; }
+      color: #ff4500 ; }
     .outer-footer__text-wrap span {
       font-size: 14px;
       color: #ffffff; }
@@ -2701,7 +2701,7 @@ backdrop-filter: blur(29px);
     display: block; }
     .testimonial__double-quote i {
       font-size: 28px;
-      color: #333333; }
+ }
   .testimonial__block-quote {
     margin: 0 auto;
     width: 70%;
@@ -6154,12 +6154,14 @@ color: #ff4500;;
   border: 1px solid #333333;
   margin-right: 4px;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: #ff4500;
   transition: background 0.8s ease-out; }
   .owl-carousel#testimonial-slider button.owl-dot:last-child {
     margin-right: 0; }
   .owl-carousel#testimonial-slider button.owl-dot.active, .owl-carousel#testimonial-slider button.owl-dot:hover {
-    background-color: #333333; }
+    background-color: #FF9800; 
+  
+  }
 
 .content-span-1 {
   font-size: 1.25rem;
@@ -6462,23 +6464,6 @@ box-shadow:  20px 20px 60px #bebebe,
 
 #newsletter-modal .modal-content  {
   padding: 0;
-backdrop-filter: blur(29px);
-  background-color: transparent !important;
-    -webkit-backdrop-filter: blur(29px); /* For Safari */
-
-}
-.row u-s-m-x-0, .popup{
-  background-color: transparent !important;
-}
-
-.new-l__h3{
-  color: #ff4500d4;
-}
-.new-l__p2, .new-l__p1{
-color: white;
-}
-.new-l__link{
-color: #ffcf00;
 }
   .ah-list--design2 > li > a {
     font-weight: 700;
@@ -6509,6 +6494,11 @@ color: #ffcf00;
     display: flex;
     align-items: center;
 }
+
+.fa, .fab, .fal, .far, .fas {
+color: #ff4500;
+}
+
 @media (max-width: 991px) {
 .pageUl{
  flex-direction: column;

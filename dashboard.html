@@ -34,7 +34,6 @@
 
     <!--====== Main App ======-->
     <div id="app">
-
         <!--====== Main Header ======-->
         <header class="header--style-1">
 
@@ -49,40 +48,36 @@
 
                         <a class="main-logo" href="index.html">
 
-                          <img src="./images/logo/logo-1.png" alt="LOGO HERE"></a>
+                            <img src="./images/logo/logo-1.png" alt="LOGO HERE"></a>
                         <!--====== End - Main Logo ======-->
 
-
+<div class="searchAndMore">
                         <!--====== Search Form ======-->
-                        <form class="main-form">
+                        <form class="main-form" style="display: flex;">
 
                             <label for="main-search"></label>
 
-                            <input class="input-text input-text--border-radius input-text--style-1" type="text"
-                                id="main-search" placeholder="Search">
+                            <input class="input-text input-text--border-radius input-text--style-1" type="text" id="main-search" placeholder="Search">
 
-                            <button class="btn btn--icon fas fa-search main-search-button" type="submit"></button>
-                        </form>
+                            <button class="btn btn--icon fas fa-search main-search-button" type="submit"></button></form>
                         <!--====== End - Search Form ======-->
-
-
                         <!--====== Dropdown Main plugin ======-->
                         <div class="menu-init" id="navigation">
 
-                            <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-cogs"
-                                type="button"></button>
+                            <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-cogs" type="button"></button>
 
                             <!--====== Menu ======-->
                             <div class="ah-lg-mode">
 
-                                <span class="ah-close">✕ Close</span>
+                                <span class="ah-close">Close
+                                    <i class="ri-collapse-diagonal-2-line"></i>
+                                </span>
 
                                 <!--====== List ======-->
                                 <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
-                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left"
-                                        title="Account">
+                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Account">
 
-                                        <a><i class="far fa-user-circle"></i></a>
+                                        <a ><i class="far fa-user-circle"></i></a>
 
                                         <!--====== Dropdown ======-->
 
@@ -92,39 +87,35 @@
 
                                                 <a href="signup.html"><i class="fas fa-user-plus u-s-m-r-6"></i>
 
-                                                    <span>Signup</span></a>
-                                            </li>
+                                                    <span>Signup</span></a></li>
                                             <li>
 
                                                 <a href="signin.html"><i class="fas fa-lock u-s-m-r-6"></i>
 
-                                                    <span>Signin</span></a>
-                                            </li>
+                                                    <span>Signin</span></a></li>
                                             <li>
 
                                                 <a href="signup.html"><i class="fas fa-lock-open u-s-m-r-6"></i>
 
-                                                    <span>Signout</span></a>
-                                            </li>
+                                                    <span>Signout</span></a></li>
                                         </ul>
                                         <!--====== End - Dropdown ======-->
                                     </li>
-                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left"
-                                        title="Dashboard">
+                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Dashboard">
 
-                                        <a href="./dashboard.html"><i class="fas fa-user-cog"></i></a>
+                                       <a href="./dashboard.html"><i class="fas fa-user-cog"></i></a>
 
                                     </li>
                                     <li data-tooltip="tooltip" data-placement="left" title="Feature your product">
 
-                                        <a href="tel:+0900901904"><i class="fas fa-phone-volume"></i></a>
-                                    </li>
+                                        <a href="tel:+0900901904"><i class="fas fa-phone-volume"></i></a></li>
                                 </ul>
                                 <!--====== End - List ======-->
                             </div>
                             <!--====== End - Menu ======-->
                         </div>
                         <!--====== End - Dropdown Main plugin ======-->
+                        </div>
                     </div>
                     <!--====== End - Primary Nav ======-->
                 </div>
@@ -143,22 +134,22 @@
                         <!--====== Dropdown Main plugin ======-->
                         <div class="menu-init" id="navigation2">
 
-                           
                             <button class="btn moreBtn btn--icon toggle-button toggle-button--secondary" type="button">
                             MORE  <i class="ri-expand-diagonal-s-line"></i>
                             </button>
-
+                    
                             <!--====== Menu ======-->
                             <div class="ah-lg-mode">
 
-                                <span class="ah-close">✕ Close</span>
+                                <span class="ah-close">Close
+                                    <i class="ri-collapse-diagonal-2-line"></i>
+                                </span>
 
                                 <!--====== List ======-->
                                 <ul class="ah-list ah-list--design2 ah-list--link-color-secondary">
                                     <li>
 
-                                        <a href="./newarrival.html">NEW ARRIVALS</a>
-                                    </li>
+                                        <a href="./newarrival.html">NEW ARRIVALS</a></li>
                                     <li class="has-dropdown">
 
                                         <a href="./explore.html">EXPLORE</i></a>
@@ -169,11 +160,9 @@
 
                                     </li>
                                     <li>
-                                        <a href="./bestSale.html">BEST SALE PRODUCT</a>
-                                    </li>
+                                        <a href="./bestSale.html">BEST SALE PRODUCT</a></li>
                                     <li>
-                                        <a href="./whatsnew.html">WHAT'S NEW?</a>
-                                    </li>
+                                        <a href="./whatsnew.html">WHAT'S NEW?</a></li>
                                 </ul>
                                 <!--====== End - List ======-->
                             </div>
@@ -185,193 +174,28 @@
                         <!--====== Dropdown Main plugin ======-->
                         <div class="menu-init" id="navigation3">
 
-                            <button
-                                class="btn btn--icon toggle-button toggle-button--secondary fas fa-shopping-bag toggle-button-shop"
-                                type="button"></button>
+                            <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-shopping-bag toggle-button-shop" type="button"></button>
 
                             <span class="total-item-round">2</span>
 
                             <!--====== Menu ======-->
                             <div class="ah-lg-mode">
 
-                                <span class="ah-close">✕ Close</span>
+                                <span class="ah-close">Close
+                                    <i class="ri-collapse-diagonal-2-line"></i>
+                                </span>
 
                                 <!--====== List ======-->
                                 <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
                                     <li>
 
-                                        <a href="index.html"><i class="fas fa-home u-c-brand"></i></a>
-                                    </li>
+                                        <a href="index.html"><i class="fas fa-home u-c-brand"></i></a></li>
                                     <li class="has-dropdown">
 
                                         <a class="mini-cart-shop-link"><i class="fas fa-shopping-bag"></i>
 
                                             <span class="total-item-round">2</span></a>
 
-                                        <!--====== Dropdown ======-->
-
-                                        <span class="js-menu-toggle"></span>
-                                        <div class="mini-cart">
-
-                                            <!--====== Mini Product Container ======-->
-                                            <div class="mini-product-container gl-scroll u-s-m-b-15">
-
-                                                <!--====== Card for mini cart ======-->
-                                                <div class="card-mini-product">
-                                                    <div class="mini-product">
-                                                        <div class="mini-product__image-wrapper">
-
-                                                            <a class="mini-product__link" href="product-detail.html">
-
-                                                                <img class="u-img-fluid"
-                                                                    src="images/product/electronic/product3.jpg"
-                                                                    alt=""></a>
-                                                        </div>
-                                                        <div class="mini-product__info-wrapper">
-
-                                                            <span class="mini-product__category">
-
-                                                                <a
-                                                                    href="shop-side-version-2.html">Electronics</a></span>
-
-                                                            <span class="mini-product__name">
-
-                                                                <a href="product-detail.html">Yellow Wireless
-                                                                    Headphone</a></span>
-
-                                                            <span class="mini-product__quantity">1 x</span>
-
-                                                            <span class="mini-product__price">$8</span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
-                                                </div>
-                                                <!--====== End - Card for mini cart ======-->
-
-
-                                                <!--====== Card for mini cart ======-->
-                                                <div class="card-mini-product">
-                                                    <div class="mini-product">
-                                                        <div class="mini-product__image-wrapper">
-
-                                                            <a class="mini-product__link" href="product-detail.html">
-
-                                                                <img class="u-img-fluid"
-                                                                    src="images/product/electronic/product18.jpg"
-                                                                    alt=""></a>
-                                                        </div>
-                                                        <div class="mini-product__info-wrapper">
-
-                                                            <span class="mini-product__category">
-
-                                                                <a
-                                                                    href="shop-side-version-2.html">Electronics</a></span>
-
-                                                            <span class="mini-product__name">
-
-                                                                <a href="product-detail.html">Nikon DSLR Camera
-                                                                    4k</a></span>
-
-                                                            <span class="mini-product__quantity">1 x</span>
-
-                                                            <span class="mini-product__price">$8</span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
-                                                </div>
-                                                <!--====== End - Card for mini cart ======-->
-
-
-                                                <!--====== Card for mini cart ======-->
-                                                <div class="card-mini-product">
-                                                    <div class="mini-product">
-                                                        <div class="mini-product__image-wrapper">
-
-                                                            <a class="mini-product__link" href="product-detail.html">
-
-                                                                <img class="u-img-fluid"
-                                                                    src="images/product/women/product8.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="mini-product__info-wrapper">
-
-                                                            <span class="mini-product__category">
-
-                                                                <a href="shop-side-version-2.html">Women
-                                                                    Clothing</a></span>
-
-                                                            <span class="mini-product__name">
-
-                                                                <a href="product-detail.html">New Dress D Nice
-                                                                    Elegant</a></span>
-
-                                                            <span class="mini-product__quantity">1 x</span>
-
-                                                            <span class="mini-product__price">$8</span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
-                                                </div>
-                                                <!--====== End - Card for mini cart ======-->
-
-
-                                                <!--====== Card for mini cart ======-->
-                                                <div class="card-mini-product">
-                                                    <div class="mini-product">
-                                                        <div class="mini-product__image-wrapper">
-
-                                                            <a class="mini-product__link" href="product-detail.html">
-
-                                                                <img class="u-img-fluid"
-                                                                    src="images/product/men/product8.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="mini-product__info-wrapper">
-
-                                                            <span class="mini-product__category">
-
-                                                                <a href="shop-side-version-2.html">Men
-                                                                    Clothing</a></span>
-
-                                                            <span class="mini-product__name">
-
-                                                                <a href="product-detail.html">New Fashion D Nice
-                                                                    Elegant</a></span>
-
-                                                            <span class="mini-product__quantity">1 x</span>
-
-                                                            <span class="mini-product__price">$8</span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
-                                                </div>
-                                                <!--====== End - Card for mini cart ======-->
-                                            </div>
-                                            <!--====== End - Mini Product Container ======-->
-
-
-                                            <!--====== Mini Product Statistics ======-->
-                                            <div class="mini-product-stat">
-                                                <div class="mini-total">
-
-                                                    <span class="subtotal-text">SUBTOTAL</span>
-
-                                                    <span class="subtotal-value">$16</span>
-                                                </div>
-                                                <div class="mini-action">
-
-                                                    <a class="mini-link btn--e-brand-b-2" href="checkout.html">PROCEED
-                                                        TO CHECKOUT</a>
-
-                                                    <a class="mini-link btn--e-transparent-secondary-b-2"
-                                                        href="cart.html">VIEW CART</a>
-                                                </div>
-                                            </div>
-                                            <!--====== End - Mini Product Statistics ======-->
-                                        </div>
-                                        <!--====== End - Dropdown ======-->
                                     </li>
                                 </ul>
                                 <!--====== End - List ======-->
@@ -726,17 +550,7 @@
     <!--====== End - Main App ======-->
 
 
-    <!--====== Google Analytics: change UA-XXXXX-Y to be your site's ID ======-->
-    <script>
-        window.ga = function () {
-            ga.q.push(arguments)
-        };
-        ga.q = [];
-        ga.l = +new Date;
-        ga('create', 'UA-XXXXX-Y', 'auto');
-        ga('send', 'pageview')
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    
 
     <!--====== Vendor Js ======-->
     <script src="js/vendor.js"></script>
@@ -748,22 +562,6 @@
     <script src="js/app.js"></script>
 
     <!--====== Noscript ======-->
-    <noscript>
-        <div class="app-setting">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="app-setting__wrap">
-                            <h1 class="app-setting__h1">JavaScript is disabled in your browser.</h1>
-
-                            <span class="app-setting__text">Please enable JavaScript in your browser or upgrade to a
-                                JavaScript-capable browser.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </noscript>
 </body>
 
 </html>
