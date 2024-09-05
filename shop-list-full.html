@@ -11,7 +11,7 @@
 
     <!--====== Google Font ======-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
-
+    <link rel="stylesheet" href="./css/navbar.css">
     <!--====== Vendor Css ======-->
     <link rel="stylesheet" href="css/vendor.css">
 
@@ -31,320 +31,69 @@
     <!--====== Main App ======-->
     <div id="app">
 
-        <!--====== Main Header ======-->
-        <header class="header--style-1">
-
-            <!--====== Nav 1 ======-->
-            <nav class="primary-nav primary-nav-wrapper--border">
-                <div class="container">
-
-                    <!--====== Primary Nav ======-->
-                    <div class="primary-nav">
-
-                        <!--====== Main Logo ======-->
-
-                        <a class="main-logo" href="index.html">
-
-                            <img src="./images/logo/logo-1.png" alt="LOGO HERE"></a>
-                        <!--====== End - Main Logo ======-->
-
-<div class="searchAndMore">
-                        <!--====== Search Form ======-->
-                        <form class="main-form">
-
-                            <label for="main-search"></label>
-
-                            <input class="input-text input-text--border-radius input-text--style-1" type="text" id="main-search" placeholder="Search">
-
-                            <button class="btn btn--icon fas fa-search main-search-button" type="submit"></button></form>
-                        <!--====== End - Search Form ======-->
-                        <!--====== Dropdown Main plugin ======-->
-                        <div class="menu-init" id="navigation">
-
-                            <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-cogs" type="button"></button>
-
-                            <!--====== Menu ======-->
-                            <div class="ah-lg-mode">
-
-                                <span class="ah-close">Close
-                                    <i class="ri-collapse-diagonal-2-line"></i>
-                                </span>
-
-                                <!--====== List ======-->
-                                <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
-                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Account">
-
-                                        <a ><i class="far fa-user-circle"></i></a>
-
-                                        <!--====== Dropdown ======-->
-
-                                        <span class="js-menu-toggle"></span>
-                                        <ul style="width:120px">
-                                            <li>
-
-                                                <a href="signup.html"><i class="fas fa-user-plus u-s-m-r-6"></i>
-
-                                                    <span>Signup</span></a></li>
-                                            <li>
-
-                                                <a href="signin.html"><i class="fas fa-lock u-s-m-r-6"></i>
-
-                                                    <span>Signin</span></a></li>
-                                            <li>
-
-                                                <a href="signup.html"><i class="fas fa-lock-open u-s-m-r-6"></i>
-
-                                                    <span>Signout</span></a></li>
-                                        </ul>
-                                        <!--====== End - Dropdown ======-->
-                                    </li>
-                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Dashboard">
-
-                                       <a href="./dashboard.html"><i class="fas fa-user-cog"></i></a>
-
-                                    </li>
-                                    <li data-tooltip="tooltip" data-placement="left" title="Feature your product">
-
-                                        <a href="tel:+0900901904"><i class="fas fa-phone-volume"></i></a></li>
-                                </ul>
-                                <!--====== End - List ======-->
-                            </div>
-                            <!--====== End - Menu ======-->
-                        </div>
-                        <!--====== End - Dropdown Main plugin ======-->
-                        </div>
-                    </div>
-                    <!--====== End - Primary Nav ======-->
-                </div>
-            </nav>
-            <!--====== End - Nav 1 ======-->
-
-
-            <!--====== Nav 2 ======-->
-            <nav class="secondary-nav-wrapper">
-                <div class="container">
-
-                    <!--====== Secondary Nav ======-->
-                    <div class="secondary-nav">
-
-
-                        <!--====== Dropdown Main plugin ======-->
-                        <div class="menu-init" id="navigation2">
-
-                            <button class="btn moreBtn btn--icon toggle-button toggle-button--secondary" type="button">
-                            MORE  <i class="ri-expand-diagonal-s-line"></i>
-                            </button>
-                    
-                            <!--====== Menu ======-->
-                            <div class="ah-lg-mode">
-
-                                <span class="ah-close">Close
-                                    <i class="ri-collapse-diagonal-2-line"></i>
-                                </span>
-
-                                <!--====== List ======-->
-                                <ul class="ah-list ah-list--design2 ah-list--link-color-secondary">
-                                    <li>
-
-                                        <a href="./newarrival.html">NEW ARRIVALS</a></li>
-                                    <li class="has-dropdown">
-
-                                        <a href="./explore.html">EXPLORE</i></a>
-                                    </li>
-                                    <li class="has-dropdown">
-
-                                        <!-- <a>BLOG<i class="fas fa-angle-down u-s-m-l-6"></i></a> -->
-
-                                    </li>
-                                    <li>
-                                        <a href="./bestSale.html">BEST SALE PRODUCT</a></li>
-                                    <li>
-                                        <a href="./whatsnew.html">WHAT'S NEW?</a></li>
-                                </ul>
-                                <!--====== End - List ======-->
-                            </div>
-                            <!--====== End - Menu ======-->
-                        </div>
-                        <!--====== End - Dropdown Main plugin ======-->
-
-
-                        <!--====== Dropdown Main plugin ======-->
-                        <div class="menu-init" id="navigation3">
-
-                            <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-shopping-bag toggle-button-shop" type="button"></button>
-
-                            <span class="total-item-round">2</span>
-
-                            <!--====== Menu ======-->
-                            <div class="ah-lg-mode">
-
-                                <span class="ah-close">Close
-                                    <i class="ri-collapse-diagonal-2-line"></i>
-                                </span>
-
-                                <!--====== List ======-->
-                                <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
-                                    <li>
-
-                                        <a href="index.html"><i class="fas fa-home u-c-brand"></i></a></li>
-                                    <li class="has-dropdown">
-
-                                        <a class="mini-cart-shop-link"><i class="fas fa-shopping-bag"></i>
-
-                                            <span class="total-item-round">2</span></a>
-
-                                        <!--====== Dropdown ======-->
-
-                                        <span class="js-menu-toggle"></span>
-                                        <div class="mini-cart">
-
-                                            <!--====== Mini Product Container ======-->
-                                            <div class="mini-product-container gl-scroll u-s-m-b-15">
-
-                                                <!--====== Card for mini cart ======-->
-                                                <div class="card-mini-product">
-                                                    <div class="mini-product">
-                                                        <div class="mini-product__image-wrapper">
-
-                                                            <a class="mini-product__link" href="product-detail.html">
-
-                                                                <img class="u-img-fluid" src="images/product/electronic/product3.jpg" alt=""></a></div>
-                                                        <div class="mini-product__info-wrapper">
-
-                                                            <span class="mini-product__category">
-
-                                                                <a href="shop-side-version-2.html">Electronics</a></span>
-
-                                                            <span class="mini-product__name">
-
-                                                                <a href="product-detail.html">Yellow Wireless Headphone</a></span>
-
-                                                            <span class="mini-product__quantity">1 x</span>
-
-                                                            <span class="mini-product__price">$8</span></div>
-                                                    </div>
-
-                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
-                                                </div>
-                                                <!--====== End - Card for mini cart ======-->
-
-
-                                                <!--====== Card for mini cart ======-->
-                                                <div class="card-mini-product">
-                                                    <div class="mini-product">
-                                                        <div class="mini-product__image-wrapper">
-
-                                                            <a class="mini-product__link" href="product-detail.html">
-
-                                                                <img class="u-img-fluid" src="images/product/electronic/product18.jpg" alt=""></a></div>
-                                                        <div class="mini-product__info-wrapper">
-
-                                                            <span class="mini-product__category">
-
-                                                                <a href="shop-side-version-2.html">Electronics</a></span>
-
-                                                            <span class="mini-product__name">
-
-                                                                <a href="product-detail.html">Nikon DSLR Camera 4k</a></span>
-
-                                                            <span class="mini-product__quantity">1 x</span>
-
-                                                            <span class="mini-product__price">$8</span></div>
-                                                    </div>
-
-                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
-                                                </div>
-                                                <!--====== End - Card for mini cart ======-->
-
-
-                                                <!--====== Card for mini cart ======-->
-                                                <div class="card-mini-product">
-                                                    <div class="mini-product">
-                                                        <div class="mini-product__image-wrapper">
-
-                                                            <a class="mini-product__link" href="product-detail.html">
-
-                                                                <img class="u-img-fluid" src="images/product/women/product8.jpg" alt=""></a></div>
-                                                        <div class="mini-product__info-wrapper">
-
-                                                            <span class="mini-product__category">
-
-                                                                <a href="shop-side-version-2.html">Women Clothing</a></span>
-
-                                                            <span class="mini-product__name">
-
-                                                                <a href="product-detail.html">New Dress D Nice Elegant</a></span>
-
-                                                            <span class="mini-product__quantity">1 x</span>
-
-                                                            <span class="mini-product__price">$8</span></div>
-                                                    </div>
-
-                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
-                                                </div>
-                                                <!--====== End - Card for mini cart ======-->
-
-
-                                                <!--====== Card for mini cart ======-->
-                                                <div class="card-mini-product">
-                                                    <div class="mini-product">
-                                                        <div class="mini-product__image-wrapper">
-
-                                                            <a class="mini-product__link" href="product-detail.html">
-
-                                                                <img class="u-img-fluid" src="images/product/men/product8.jpg" alt=""></a></div>
-                                                        <div class="mini-product__info-wrapper">
-
-                                                            <span class="mini-product__category">
-
-                                                                <a href="shop-side-version-2.html">Men Clothing</a></span>
-
-                                                            <span class="mini-product__name">
-
-                                                                <a href="product-detail.html">New Fashion D Nice Elegant</a></span>
-
-                                                            <span class="mini-product__quantity">1 x</span>
-
-                                                            <span class="mini-product__price">$8</span></div>
-                                                    </div>
-
-                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
-                                                </div>
-                                                <!--====== End - Card for mini cart ======-->
-                                            </div>
-                                            <!--====== End - Mini Product Container ======-->
-
-
-                                            <!--====== Mini Product Statistics ======-->
-                                            <div class="mini-product-stat">
-                                                <div class="mini-total">
-
-                                                    <span class="subtotal-text">SUBTOTAL</span>
-
-                                                    <span class="subtotal-value">$16</span></div>
-                                                <div class="mini-action">
-
-                                                    <a class="mini-link btn--e-brand-b-2" href="checkout.html">PROCEED TO CHECKOUT</a>
-
-                                                    <a class="mini-link btn--e-transparent-secondary-b-2" href="cart.html">VIEW CART</a></div>
-                                            </div>
-                                            <!--====== End - Mini Product Statistics ======-->
-                                        </div>
-                                        <!--====== End - Dropdown ======-->
-                                    </li>
-                                </ul>
-                                <!--====== End - List ======-->
-                            </div>
-                            <!--====== End - Menu ======-->
-                        </div>
-                        <!--====== End - Dropdown Main plugin ======-->
-                    </div>
-                    <!--====== End - Secondary Nav ======-->
-                </div>
-            </nav>
-            <!--====== End - Nav 2 ======-->
-        </header>
-        <!--====== End - Main Header ======-->
+<!-- Header section start -->
+<header class="ecomNav-header">
+    <a href="/" class="ecomNav-logo"><img src="./images//logo/logo-1.png" style="width: 150px;" alt="" ></a>
+    <nav class="ecomNav-navbar">
+        <a href="/">HOME</a>  
+        <a href="./newarrival.html">NEW ARRIVAL</a>  
+        <a href="./explore.html">EXPLORE</a>  
+        <a href="./whatsnew.html">WHAT'S NEW?</a>  
+    </nav>
+
+    <div class="ecomNav-icons">
+        <div class="fas fa-bars" id="ecomNav-menu-btn"></div>
+        <div class="fas fa-search" id="ecomNav-search-btn"></div>
+        <div class="fas fa-shopping-cart" id="ecomNav-cart-btn"></div>
+        <div class="fas fa-user" id="ecomNav-login-btn"></div>
+    </div>
+
+    <form action="" class="ecomNav-search-form">
+        <input type="search" id="ecomNav-search-box" placeholder="search here...">
+        <label for="ecomNav-search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="ecomNav-shopping-cart">
+        <div class="ecomNav-box">
+            <i class="fas fa-trash"></i>
+            <img src="photos/cart-img-1.png" alt="">
+            <div class="ecomNav-content">
+                <h3>watermelon</h3>
+                <span class="ecomNav-price">$4.99/-</span>
+                <span class="ecomNav-quantity">qty : 1</span>
+            </div>
+        </div>
+
+        <div class="ecomNav-box">
+            <i class="fas fa-trash"></i>
+            <img src="photos/cart-img-2.png" alt="">
+            <div class="ecomNav-content">
+                <h3>onion</h3>
+                <span class="ecomNav-price">$4.99/-</span>
+                <span class="ecomNav-quantity">qty : 1</span>
+            </div>
+        </div>
+
+        <div class="ecomNav-box">
+            <i class="fas fa-trash"></i>
+            <img src="photos/cart-img-3.png" alt="">
+            <div class="ecomNav-content">
+                <h3>chicken</h3>
+                <span class="ecomNav-price">$4.99/-</span>
+                <span class="ecomNav-quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="ecomNav-total">total : $19.69/-</div>
+        <a href="./checkout.html" class="ecomNav-btn">checkout</a>
+    </div>
+
+    <form action="" class="ecomNav-login-form">
+        <h3>Be Our Member</h3>
+      <a href="./signin.html" class="ecomNav-btn"> <button>Login</button></a> 
+      <a href="./signup.html" class="ecomNav-btn"> <button>I am New</button></a> 
+    </form>
+</header>
+<!-- Header section end -->
 
 
         <!--====== App Content ======-->
@@ -2203,16 +1952,8 @@
     <!--====== End - Main App ======-->
 
 
-    <!--====== Google Analytics: change UA-XXXXX-Y to be your site's ID ======-->
-    <script>
-        window.ga = function() {
-            ga.q.push(arguments)
-        };
-        ga.q = [];
-        ga.l = +new Date;
-        ga('create', 'UA-XXXXX-Y', 'auto');
-        ga('send', 'pageview')
-    </script>
+<script src="./js/navbar.js"></script>
+
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 
     <!--====== Vendor Js ======-->
@@ -2224,21 +1965,6 @@
     <!--====== App ======-->
     <script src="js/app.js"></script>
 
-    <!--====== Noscript ======-->
-    <noscript>
-        <div class="app-setting">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="app-setting__wrap">
-                            <h1 class="app-setting__h1">JavaScript is disabled in your browser.</h1>
 
-                            <span class="app-setting__text">Please enable JavaScript in your browser or upgrade to a JavaScript-capable browser.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </noscript>
 </body>
 </html>

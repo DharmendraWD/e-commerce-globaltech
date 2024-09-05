@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --orange: #ff7800;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border: .2rem solid rgba(0,0,0,.1);
+    --outline: .1rem solid rgba(0,0,0,.1);
+    --outline-hover: .2rem solid var(--black);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+body {
+    background-color: #eee;
+}
+/* ------------------ */
+.ecomNav-header {
+        left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+      position: sticky;
+      
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Adjust as needed to ensure it stays on top */
+}
+
+
+
+.ecomNav-header .ecomNav-logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+.ecomNav-header .ecomNav-logo i {
+    color: var(--orange);
+}
+.ecomNav-header .ecomNav-navbar a {
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black);
+}
+.ecomNav-header .ecomNav-navbar a:hover {
+    color: var(--orange);
+}
+.ecomNav-header .ecomNav-icons div {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--black);
+    font-size: 2rem;
+    margin-left: .3rem;
+    cursor: pointer;
+    text-align: center;
+}
+.ecomNav-header .ecomNav-icons div:hover {
+    background: var(--orange);
+    color: #fff;
+}
+#ecomNav-menu-btn {
+    display: none;
+}
+.ecomNav-header .ecomNav-search-form {
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 50rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+.ecomNav-header .ecomNav-search-form.active {
+    right: 2rem;
+    transition: .4s linear;
+}
+.ecomNav-header .ecomNav-search-form input {
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0 1.5rem;
+}
+.ecomNav-header .ecomNav-search-form label {
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+.ecomNav-header .ecomNav-search-form label:hover {
+    color: var(--orange);
+}
+.ecomNav-header .ecomNav-shopping-cart {
+    background: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 35rem;
+    top: 110%;
+    right: -110%;
+    position: absolute;
+}
+.ecomNav-header .ecomNav-shopping-cart.active {
+    right: 2rem;
+    transition: .4s linear;
+}
+.ecomNav-header .ecomNav-shopping-cart .ecomNav-box {
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.ecomNav-header .ecomNav-shopping-cart .ecomNav-box img {
+    height: 10rem;
+}
+.ecomNav-header .ecomNav-shopping-cart .ecomNav-box .fa-trash {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%; right: 2rem;
+    color: var(--light-color);
+    transform: translateY(-50%);
+}
+.ecomNav-header .ecomNav-shopping-cart .ecomNav-box .fa-trash:hover {
+    color: var(--orange);
+}
+.ecomNav-header .ecomNav-shopping-cart .ecomNav-box .ecomNav-content h3 {
+    color: var(--black);
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+.ecomNav-header .ecomNav-shopping-cart .ecomNav-box .ecomNav-content span {
+    color: var(--light-color);
+    font-size: 1.6rem;
+}
+.ecomNav-header .ecomNav-shopping-cart .ecomNav-box .ecomNav-content .ecomNav-quantity {
+    padding-left: 1rem;
+}
+.ecomNav-header .ecomNav-shopping-cart .ecomNav-total {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--black);
+}
+.ecomNav-header .ecomNav-shopping-cart .ecomNav-btn {
+    display: block;
+    text-align: center;
+    margin: 1rem;
+}
+.ecomNav-btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    cursor: pointer;
+    background: none;
+}
+.ecomNav-btn:hover {
+    background: var(--orange);
+    color: #fff;
+}
+.ecomNav-header .ecomNav-login-form {
+    width: 35rem;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    top: 110%; right: -110%;
+    position: absolute;
+}
+.ecomNav-header .ecomNav-login-form.active {
+    right: 2rem;
+    transition: .4s linear;
+}
+.ecomNav-header .ecomNav-login-form h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+    text-transform: uppercase;
+}
+.ecomNav-header .ecomNav-login-form .ecomNav-box {
+    width: 100%;
+    margin: .7rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+.ecomNav-header .ecomNav-login-form p {
+    font-size: 1.4rem;
+    padding: .5rem 0;
+    color: var(--light-color);
+}
+.ecomNav-header .ecomNav-login-form p a {
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+/* media queries */
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+    .ecomNav-header {
+        padding: 2rem;
+    }
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #ecomNav-menu-btn {
+        display: inline-block;
+    }
+    .ecomNav-header .ecomNav-search-form {
+        width: 90%;
+    }
+    .ecomNav-header .ecomNav-navbar {
+        position: absolute;
+        top: 110%; right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+    }
+    .ecomNav-header .ecomNav-navbar.active {
+        right: 2rem;
+        transition: .4s linear;
+    }
+    .ecomNav-header .ecomNav-navbar a {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .heading {
+        font-size: 2.5rem;
+    }
+    .footer {
+        text-align: center;
+    }
+    .footer .box-container .box .payment-img {
+        margin: 2rem auto;
+    }
+}
