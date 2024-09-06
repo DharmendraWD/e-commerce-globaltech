@@ -8,11 +8,7 @@ body { background-color: #f0f0eb; line-height:1.6;}
   -webkit-background-clip: text;
   -webkit-text-fill-color:transparent; }
 .crousalUpper-containerP { margin: 20px auto; max-width: 960px; }
-h1 {
-  background: linear-gradient( 120deg, #bd34fe 30%, #41d1ff );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 .crousalUpper-slider {
     position: relative;
     width: 100%;
@@ -25,6 +21,12 @@ h1 {
     height: 400px;
     display: none;
     overflow: hidden;
+}
+.cartItemDets{
+        height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .crousalUpper-prev,

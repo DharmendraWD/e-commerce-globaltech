@@ -161,12 +161,10 @@ body {
     gap: 1rem;
     margin: 0 0;
 border-bottom: 1px solid;
-    max-height: 43px;
+    max-height: 55px;
     border-color: #ff4500;
 }
-.ecomNav-header .ecomNav-shopping-cart .ecomNav-box img {
-    height: 10rem;
-}
+
 .ecomNav-header .ecomNav-shopping-cart .ecomNav-box .fa-trash {
     font-size: 1.4rem;
     position: absolute;
@@ -179,11 +177,10 @@ border-bottom: 1px solid;
 }
 .ecomNav-header .ecomNav-shopping-cart .ecomNav-box .ecomNav-content h3 {
     color: var(--black);
-    font-size: 1rem;
+    font-size: 15px;
 }
 .ecomNav-header .ecomNav-shopping-cart .ecomNav-box .ecomNav-content span {
     color: var(--light-color);
-    font-size: .7rem;
 }
 .ecomNav-header .ecomNav-shopping-cart .ecomNav-box .ecomNav-content .ecomNav-quantity {
     padding-left: 1rem;
@@ -219,8 +216,7 @@ border-bottom: 1px solid;
 }
 .ecomNav-header .ecomNav-login-form {
     width: 35rem;
-    backdrop-filter: blur(20px);
-    --webkit-backdrop-filter: blur(20px);
+background-color: white;
     box-shadow: var(--box-shadow);
     padding: 2rem;
     border-radius: .5rem;
@@ -262,7 +258,26 @@ a button{
 .upperOptionsNav{
         width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+}
+ .ecomNav-quantity, .ecomNav-price{
+    font-size: 13px;
+}
+.cartImg{
+    width: 31px;
+    height: 31px;
+    border-radius: 50px
+}
+.cartImgHeading{
+gap: 11px;
+    display: flex;
+    align-items: center;
+}
+.cartItemDets{
+        height: 17px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 /* media queries */
@@ -276,6 +291,13 @@ a button{
     }
     section {
         padding: 2rem;
+    }
+        .searchBar{
+    width: 70vw !important;
+    font-size: 18px !important;
+}
+.ecomNav-header {
+        padding: .7rem 0;
     }
 }
 
@@ -303,6 +325,7 @@ a button{
         margin: 2rem 2.5rem;
         display: block;
     }
+
 }
 
 @media (max-width: 450px) {
